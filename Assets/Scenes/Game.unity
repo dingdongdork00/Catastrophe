@@ -133,7 +133,7 @@ GameObject:
   - component: {fileID: 161184999}
   - component: {fileID: 161185000}
   m_Layer: 0
-  m_Name: Square
+  m_Name: FirePoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -148,8 +148,8 @@ Transform:
   m_GameObject: {fileID: 161184998}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.6845, z: 0}
-  m_LocalScale: {x: 0.3636, y: 0.3636, z: 0.3636}
+  m_LocalPosition: {x: -0, y: 0.606, z: 0}
+  m_LocalScale: {x: 0.12816899, y: 0.20663388, z: 0.3636}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 853868441}
@@ -310,6 +310,7 @@ GameObject:
   - component: {fileID: 853868440}
   - component: {fileID: 853868439}
   - component: {fileID: 853868442}
+  - component: {fileID: 853868443}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -429,6 +430,21 @@ MonoBehaviour:
   cam: {fileID: 519420031}
   movement: {x: 0, y: 0}
   mousePos: {x: 0, y: 0}
+--- !u!114 &853868443
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 853868438}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dbf2b3425fa44d34fa176347fa09a9a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bulletPrefab: {fileID: 1073733272740375293, guid: b0c106bfb39e6834e8c8b0918a28232f, type: 3}
+  firePoint: {fileID: 161184999}
+  bulletForce: 5
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

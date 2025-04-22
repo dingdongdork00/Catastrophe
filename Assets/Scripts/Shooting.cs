@@ -14,14 +14,13 @@ public class Shooting : MonoBehaviour
 
     public bool firing;
 
-    public AudioClip fireSound;
+    
     private AudioSource fireSource;
 
 
     private void Start()
     {
         firing = false;
-        fireSound = GetComponent<AudioClip>();
         fireSource = GetComponent<AudioSource>();
     }
 
@@ -31,7 +30,7 @@ public class Shooting : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Mouse0) && CanShoot())
         {
             Shoot();
-
+            fireSource.Play();
         }
     }
 

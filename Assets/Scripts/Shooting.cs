@@ -13,8 +13,6 @@ public class Shooting : MonoBehaviour
     private float nextFire = 0.5f;
 
     public bool firing;
-
-    
     private AudioSource fireSource;
 
 

@@ -32,9 +32,14 @@ public class Spawner : MonoBehaviour
 
         if(totalEnemies.Length == 0 && !canSpawn && currentWaveNumber+1 != waves.Length)
         {
-            currentWaveNumber++;
-            canSpawn = true;
+           SpawnNextWave();
         }
+    }
+
+    void SpawnNextWave()
+    {
+        currentWaveNumber++;
+        canSpawn = true;
     }
 
     void SpawnWave()

@@ -30,7 +30,7 @@ public class Player : MonoBehaviour
 
         //Rotation
         Vector2 lookDirection = mousePos - rb.position;
-        float angle = Mathf.Atan2(lookDirection.y, lookDirection.x) * Mathf.Rad2Deg - 90f;
+        float angle = Mathf.Atan2(lookDirection.y, lookDirection.x) * Mathf.Rad2Deg;
         rb.rotation = angle;
     }
 }
